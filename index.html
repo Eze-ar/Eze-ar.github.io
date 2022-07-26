@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>@EZE-ar | Portfolio</title>
+</head>
+
+<body>
+    <!-- Sección del Menú  -->
+    <div class="todo">
+        <section class="menu" id="menu">
+            <header class="menu__header">
+                <img src="assets/images/user.png" class="menu__logo" />
+                <h3 class="menu__title">@EZE-ar <img class="menu__title__flag" src="assets/images/bandera_argentina.gif" alt="Bandera Argentina" class="bandera-argentina" />| Portfolio</h3>
+            </header>
+            <nav>
+                <ul class="menu__list" id="miNavbar">
+                    <li class="menu__list__item"><a class="activo" href="#">Inicio</a></li>
+                    <li class="menu__list__item"><a href="#about">Sobre mí</a></li>
+                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="menu__list__item"><a href="#proyectos">Proyectos</a></li>
+                    <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+                    <li class="menu__list__item"></li>
+                    <a href="javascript:void(0);" class="iconBurger" onclick="burgerMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Sección del Header/Title/Hero -->
+        <section class="title">
+            <picture class="title__my">
+                <img class="title__my__photo" src="assets/images/foto.jpg" alt="Sí, soy yo" srcset="">
+            </picture>
+            <div class="title__container">
+                <h1 class="title__bio">Bienvenid@ a Mi Portfolio, soy <span class="highlight">Adrián "Eze" Angió</span></h1>
+                <h3 class="title__subsection">
+                    <p class="title__subsection__paragraph">
+                        <span class="highlight">Ingeniero Electrónico</span> con <span class="highlight">Posgrado Programador Python</span>, <span class="highlight">desarrollador Sr. Lenguaje C</span> y <span class="highlight">Jr. FullStack con Java</span>                        y
+                        <span class="highlight">JavaScript</span>.</p>
+                    <p class="title__subsection__paragraph">
+                        En el 2022 estuve participando de la <span class="highlight">Formación Oracle Next Education (ONE) con Alura Latam</span>.
+                    </p>
+                </h3>
+                <ul class="title__network">
+                    <!-- enlaces a mis redes sociales -->
+                    <li class="title__network__item">
+                        <a href="https://www.linkedin.com/in/ezeangio/">LinkedIn <img src="assets/images/arrow.png" /></a>
+                    </li>
+                    <li class="title__network__item">
+                        <a href="https://github.com/Eze-ar">Github <img src="assets/images/arrow.png" /> </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección sobre mi -->
+        <section class="about" id="about">
+            <div class="about__container">
+                <h3 class="about__title">Sobre mí</h3>
+                <p class="about__paragraph">Soy un apasionado por la tecnología, electrónica, sistemas y programación. En lo primero que aprendí a programar allá por los '90 fue en <span class="highlight">BASIC</span> (sí, antes que exista VB) en una Commodore 64 de mi secundario
+                    técnico. Más adelante en la misma escuela vinieron <span class="highlight">Assembler</span> del x86 y mi predilecto y padre de muchos: <span class="highlight">Lenguaje C</span>.</p>
+
+                <p class="about__paragraph">
+                    En el 2003 gané una beca de Clarín para cursar la carrera de redes de datos: <span class="highlight">Cisco Certified Network Associate (CCNA)</span>, con una duración de 2 años. En el 2015 comencé aprendiendo mi primer lenguaje POO:
+                    <span class="highlight">Java</span>, en el Instituto Argentino de Computación (IAC). Al año siguiente estaba accediendo a una beca del Ministerio de Trabajo para profundizar conocimientos en ese lenguaje en la <span class="highlight">Universidad Nacional de La Matanza</span>                    y con diploma de <span class="highlight">Oracle</span>. En plena pandemia 2021 la virtualidad me permitió realizar varios cursos: en la Fundación Telefónica de HTML, CSS, JavaScript y Java. Mediante el programa Codo a Codo del Ministerio
+                    de Educación del GCBA: programación <span class="highlight">FullStack con Python y Java</span>. También en el mismo año y en mi tiempo libre (ja) realicé un <span class="highlight">Posgrado en la Universidad Nacional de San Martín sobre Programación con Python</span>.</p>
+                <p class="about__paragraph">Profesionalmente me dediqué a brindar soporte sobre microcontroladores y sus aplicaciones (firmwares) desarrollados en sus respectivos assembler (PIC y 8051) y variantes de C (módulos Rabbit/Digi). Hoy en día continúo formándome gracias
+                    a programas como el de <span class="highlight">Oracle ONE y Alura Latam</span>. Me gusta siempre aprender cosas nuevas, seguir perfeccionándome y poder convertirme en un Desarrollador IT.</p>
+                <!-- Si quieres, pon tú firma acá! -->
+                <img src="assets/images/Firma-Eze.png" class="about__signature" />
+            </div>
+        </section>
+
+
+
+        <!-- Sección de Formación académica -->
+        <section class="academic" id="formacion">
+            <h2 class="academic__title">Formación Académica</h2>
+            <div class="academic__courses">
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__img">
+                            <img src="assets/images/Logo_UNSAM.png" class="academic__courses__img" />
+                        </li>
+                        <li class="academic__courses__item__title">
+                            <h4>Posgrado Programación en Python</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>2021 -
+                                <span class="academic__courses__item__subtitle__institution">Universidad Nacional de San Martín</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!--Pon el logotipo de la institución de formación -->
+                        <li class="academic__courses__item__img">
+                            <img src="assets/images/Logo-UTN.png" class="academic__courses__img" />
+                        </li>
+                        <li class="academic__courses__item__title">
+                            <h4>Ingeniero Electrónico</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>2007 - Universidad Tecnológica Nacional. Facultad Regional Bunos Aires</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!-- Pon el logotipo de la institución de formación -->
+                        <li class="academic__courses__item__img">
+                            <img src="assets/images/Logo-ET17.png" class="academic__courses__img" />
+                        </li>
+                        <li class="academic__courses__item__title">
+                            <h4>Técnico Electrónico</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>1995 - Escuela Técnica N° 17: "Cornelio Saavedra"</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Formación Complementaria (Cursos)-->
+        <section class="academic" id="formacion">
+            <h2 class="academic__title">Formación Complementaria</h2>
+            <div class="academic__courses">
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!--Pon el logotipo de la institución de formación -->
+                        <li class="academic__courses__item__img">
+                            <img src="assets/images/Logo-Silicon-Misiones.jpg" class="academic__courses__img" />
+                        </li>
+                        <li class="academic__courses__item__title">
+                            <h4>Desarrollo web Fullstack con Java</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>2021 - Silicon / Polotic Misiones</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__img">
+                            <img src="assets/images/Logo-Oracle-UNLaM.png" class="academic__courses__img" />
+                        </li>
+                        <li class="academic__courses__item__title">
+                            <h4>Programación Java - Intermedio</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>2016 -
+                                <span class="academic__courses__item__subtitle__institution">Universidad Nacional de La Matanza</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!-- Pon el logotipo de la institución de formación -->
+                        <li class="academic__courses__item__img">
+                            <img src="assets/images/Logo-Cisco.png" class="academic__courses__img" />
+                        </li>
+                        <li class="academic__courses__item__title">
+                            <h4>Cisco Certified Network Associate</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>2003 - Academia Cisco</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <p>Esto es sólo un resúmen, una lista completa de todos los cursos que realicé en mi <a class="mi__LinkedIn" href="https://www.linkedin.com/in/ezeangio/">LinkedIn</a></p>
+
+        </section>
+
+        <!-- Sección de Skills -->
+        <section class="skills" id="skills">
+            <h3 class="skills__title">Skills</h3>
+            <div class="skills__line">
+                <div class="skills__box">
+                    <img class="skills__img" src="assets/images/C-logo.svg" alt="Logo de C" />
+                    <p class="skills__name">C</p>
+                </div>
+                <div class="skills__box">
+                    <img class="skills__img" src="assets/images/Python-logo.svg" alt="Logo de Python" />
+                    <p class="skills__name">Python</p>
+                </div>
+                <div class="skills__box">
+                    <img class="skills__img" src="assets/images/Java-logo.svg" alt="Logo de Java" />
+                    <p class="skills__name">Java</p>
+                </div>
+                <div class="skills__box">
+                    <img class="skills__img" src="assets/images/JS-logo.svg" alt="Logo de Javascript" />
+                    <p class="skills__name">JavaScript</p>
+                </div>
+                <div class="skills__box">
+                    <img class="skills__img" src="assets/images/HTML5-logo.svg" alt="Logo de HTML" />
+                    <p class="skills__name">HTML5</p>
+                </div>
+                <div class="skills__box">
+                    <img class="skills__img" src="assets/images/CSS3-logo.svg" alt="Logo de CSS3" />
+                    <p class="skills__name">CSS3</p>
+                </div>
+                <div class="skills__box">
+                    <img class="skills__img" src="assets/images/Git-logo.svg" alt="Logo de Git" />
+                    <p class="skills__name">Git</p>
+                </div>
+
+                <div class="skills__box">
+                    <img class="skills__img" src="assets/images/GitHub-logo.svg" alt="Logo de Github" />
+                    <p class="skills__name">Github</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Hobbies -->
+        <section class="hobbies" id="hobbies">
+            <h3 class="hobbies__title">Hobbies</h3>
+            <div class="hobbies__line">
+                <div class="hobbies__box">
+                    <img class="hobbies__img" src="assets/images/programacion.png" alt="Ícono Programación" />
+                    <p class="hobbies__name">Programación</p>
+                </div>
+
+                <div class="hobbies__box">
+                    <img class="hobbies__img" src="assets/images/electronica.png" alt="Ícono Electrónica" />
+                    <p class="hobbies__name">Electrónica</p>
+                </div>
+
+                <div class="hobbies__box">
+                    <img class="hobbies__img" src="assets/images/mecanica.png" alt="Ícono Mecánica" />
+                    <p class="hobbies__name">Mecánica/Autos</p>
+                </div>
+
+                <div class="hobbies__box">
+                    <img class="hobbies__img" src="assets/images/arte.png" alt="Ícono Dibujo/Pintura" />
+                    <p class="hobbies__name">Dibujo/Pintura</p>
+                </div>
+
+                <div class="hobbies__box">
+                    <img class="hobbies__img" src="assets/images/photo-camera.png" alt="Ícono Fotografía" />
+                    <p class="hobbies__name">Fotografía</p>
+                </div>
+                <div class="hobbies__box">
+                    <img class="hobbies__img" src="assets/images/turismo.png" alt="Ícono Turismo" />
+                    <p class="hobbies__name">Turismo</p>
+                </div>
+                <div class="hobbies__box">
+                    <img class="hobbies__img" src="assets/images/pelis.png" alt="Ícono Película" />
+                    <p class="hobbies__name">Pelis</p>
+                </div>
+                <div class="hobbies__box">
+                    <img class="hobbies__img" src="assets/images/leer.png" alt="Ícono Libro" />
+                    <p class="hobbies__name">Leer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos-->
+        <section class="projects" id="proyectos">
+            <h2 class="projects__section__title">Mis Proyectos (algunos de ellos)</h2>
+            <div class="projects__box">
+                <img class="projects__img" src="assets/images/covid.png" />
+                <div class="projects__info container">
+                    <h2 class="projects__title">Análisis Datasets Covid-19 en Buenos Aires</h2>
+                    <h3 class="projects__text">Proyecto de Posgrado en Programación Python</h3>
+                    <div class="projects__description">
+                        <!-- enlace del proyecto en Github o GithubPages -->
+                        <span class="projects__repo"><a href="https://github.com/Eze-ar/Python-Analisis_Dataset_Covid-19_GCBA"><button class="projects__boton__repo">Repositorio</button></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__box right">
+                <video autoplay loop muted class="projects__img">
+                    <source src="assets/images/ahorcado.mp4" type="video/mp4">
+                </video>
+                <div class="projects__info">
+                    <h2 class="projects__title">Ahorcado!</h2>
+                    <h3 class="projects__text">Challenge Oracle ONE + Alura usando JS y HTML CANVAS</h3>
+                    <div class="projects__description">
+                        <span class="projects__repo">
+								<a href="https://github.com/Eze-ar/JS-Ahorcado">
+									<button class="projects__boton__repo">Repositorio</button>
+								</a>
+						</span>
+                        <span class="projects__demo"><a href="https://eze-ar.github.io/JS-Ahorcado/"><button class="projects__boton__demo">Ver proyecto</button></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__box">
+                <!-- Captura de pantalla del proyecto -->
+                <img class="projects__img" src="assets/images/encriptador.png" />
+                <div class="projects__info">
+                    <h2 class="projects__title">Encriptador de texto</h2>
+                    <h3 class="projects__text">Challenge Oracle ONE + Alura usando JS</h3>
+                    <div class="projects__description">
+                        <!-- enlace del proyecto en Github o GithubPages -->
+                        <span class="projects__repo"><a href="https://github.com/Eze-ar/encriptador"><button class="projects__boton__repo">Repositorio</button></a>
+                        </span>
+                        <span class="projects__demo"><a href="https://eze-ar.github.io/encriptador/"><button class="projects__boton__demo">Ver proyecto</button></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="projects__box right">
+                <img class="projects__img" src="assets/images/conferencia.png" />
+                <div class="projects__info">
+                    <h2 class="projects__title">Diseño sitio web Conferencia</h2>
+                    <h3 class="projects__text">TP para Codo a Codo usando HTML, CSS, Bootstrap y JS</h3>
+                    <div class="projects__description">
+                        <span class="projects__repo">
+                            <a href="https://github.com/Eze-ar/HTML.CSS.JS-Conferencia_CaC">
+                                <button class="projects__boton__repo">Repositorio</button>
+                            </a>
+                        </span>
+                        <span class="projects__demo"><a href="https://eze-ar.github.io/HTML.CSS.JS-Conferencia_CaC/"><button class="projects__boton__demo">Ver proyecto</button></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__box">
+                <video autoplay loop muted class="projects__img">
+                    <source src="assets/images/FullCar.mp4" type="video/mp4">
+                </video>
+                <div class="projects__info container">
+                    <h2 class="projects__title">Diseño site responsivo para Taller Integral del Automotor</h2>
+                    <h3 class="projects__text">Proyecto para Codo a Codo usando Bootstrap</h3>
+                    <div class="projects__description">
+                        <!-- enlace del proyecto en Github o GithubPages -->
+                        <span class="projects__repo"><a href="https://github.com/Eze-ar/Bootstrap-TPI"><button class="projects__boton__repo">Repositorio</button></a>
+                        </span>
+                        <span class="projects__demo"><a href="https://eze-ar.github.io/Bootstrap-TPI"><button class="projects__boton__demo">Ver proyecto</button></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+        <!-- Sección de Contacto -->
+        <section class="formcontacto" id="contacto">
+            <div class="formcontacto__contacto">
+                <div class="formcontacto__contacto__izq">
+                    <img class="formcontacto__contacto__izq__img" src="assets/images/Contacto.png" />
+                </div>
+                <div class="formcontacto__text">
+                    <h2 class="formcontacto__title">Contacto</h2>
+                    <h3 class="formcontacto__subtext">
+                        Si desea contactarme puede hacerlo preferentemente a través de <a class="mi__LinkedIn" href="https://www.linkedin.com/in/ezeangio/">mi LinkedIn</a> o de lo contrario por el siguiente formulario:
+                    </h3>
+                    <form class="formcontacto__form" name="form" action="https://formsubmit.co/76e7bd83898927b829da0bf083f9fee9" method="post">
+                        <!-- modificar nombre desde acá -->
+                        <div class="formcontacto__input__doble nombre">
+                            <input class="formcontacto__input__nombre" type="text" name="name" required placeholder="Ingrese su nombre completo..." maxlength="50" />
+                            <label for="Nombre" class="formcontacto__form___label label__nombre">Nombre completo</label>
+                        </div>
+                        <!-- modificar email desde acá -->
+                        <div class="formcontacto__input__doble email">
+                            <input class="formcontacto__input__email" type="email" name="email" required placeholder="Ingrese su dirección de email..." maxlength="50" />
+                            <label for="Nombre" class="formcontacto__form___label label__email">Email</label>
+                        </div>
+                        <div class="formcontacto__input__doble asunto">
+                            <input class="formcontacto__input__asunto" type="text" name="asunto" required placeholder="Ingrese el asunto..." maxlength="50" />
+                            <label for="Nombre" class="formcontacto__form___label label__asunto">Asunto</label>
+                        </div>
+
+                        <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Ingrese su mensaje [300 caracteres máx.]..." maxlength="300"></textarea>
+                        <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de Footer -->
+        <section class="footer">
+            <div class="footer__rodapie">
+                <img src="assets/images/Firma-Eze.png" alt="Logo EZE" class="logo__rodapie" />
+                <p>2022</p>
+            </div>
+        </section>
+    </div>
+    <!-- Script del documento JavaScript -->
+    <script src="assets/scripts/validacion.js"></script>
+    <script src="assets/scripts/navbar.js"></script>
+</body>
+
+</html>
